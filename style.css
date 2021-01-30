@@ -1,0 +1,176 @@
+::placeholder {
+    color: #24ac61;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #0d793d;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: #0d793d;
+  }
+.body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cent{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+  /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+.hed{
+  background: #0d793d;
+  width: 100%;
+  height: 140px;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  justify-content: center;
+}
+.hed img{
+  height: 80px;
+  padding: 10px;
+  margin-top: 20px;
+}
+.hed h3{
+  color: white;
+  font-size: 30px;
+}
+.fot{
+  border: 2px solid #000000;
+  border-radius: 0 0 10px 10px ;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -33px;
+}
+.fot input{
+  height: 50px;
+  width: 270px;
+  margin: 5px;
+  border: 2px solid #0d793d;
+  font-size: 17px;
+}
+
+.pp{
+  font-size: 25px;
+  color: white;
+  margin-top: -80px;
+  margin-bottom: 54px;
+  text-align: center;
+  width: 500px;
+}
+.fot input{
+  color: #0d793d;
+}
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 260px;
+    background-color: rgb(224, 0, 0);
+    color: #ffffff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+  @media only screen and (max-width: 550px) {
+    .hed{
+      background: #0d793d;
+      width: 300px;
+      height: 100px;
+  }
+  .body{
+
+  }
+  .hed img{
+      height: 50px;
+      padding: 5px;
+      margin-top: 20px;
+
+  }
+  .unn{
+
+  }
+  .hed h3{
+      color: white;
+      font-size: 18px;
+  }
+  .fot{
+      width: 300px;
+      height: 120px;
+      margin-top: -41px;
+  }
+  .fot input{
+      height: 30px;
+      width: 200px;
+      margin: 5px;
+      border: 2px solid #0d793d;
+      font-size: 14px;
+  }
+  
+  .pp{
+      font-size: 18px;
+      margin-top: -55px;
+      margin-bottom: 54px;
+      text-align: center;
+      width: 300px;
+  }
+  .fot input{
+      color: #0d793d;
+  }
+  }
